@@ -1,14 +1,63 @@
 * {
+  
+  padding: 0px;
+  margin: 0px;
   text-decoration: none;
   list-style-type: none;
 }
 
-/* Estilos CSS para ajustar o layout */
-header {
-  display: flex;
+:root {
+--color-header: #02a8f5;
+--color-menu: #5766eb;
+--color-conteudo: #f00303;
+--color-font: #000000;
+--color-menu-hover: #79ffe2;
+--color-border: #000000;
+--color-border-hover: #142af5;
 }
 
-.titulo {
-  flex: 1;
+/* Menu Principal */
+
+.div-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  align-items: center;
+  font-size: 1.4rem;
+  border-radius: 4px;
+  background-color: var(--color-header);
+  
+}
+
+.div-menu {
+  padding: 24px;
+  margin-left: 20px;
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+  
+}
+
+.div-menu:hover{
+  border: 1px solid var(--color-border-hover);
+  background-color:  var(--color-menu-hover);
+  
+}
+
+
+.div-menu a {
+  color: var(--color-font)
+}
+
+.itens-direita a {
+  padding: 20px;
+  margin-left: 20px;
   margin-right: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  color: var(--color-font)
+}
+
+.itens-direita a:hover {
+  background-color: var(--color-menu-hover);
+  border: 1px solid var(--color-border-hover)
 }
