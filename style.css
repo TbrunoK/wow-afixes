@@ -129,10 +129,23 @@
 }
 
 .container-centralizado {
-  width: 500px;
   display: flex;
+  padding: 20px;
+  background-color: #f7f7f7;
+  width: 500px;
   margin-left:50rem;
   margin-top: -1630px;
-  border: 1px solid red;
   
+}
+
+.afixos-esta-semana {
+ 
+  margin-right: 20px;
+  font-size: 22px;
+}
+
+.afixos-esta-semana a{
+  
+  font-size: 33px;
+  color: black;
 }
