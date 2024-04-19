@@ -1,3 +1,5 @@
+@import url(./style2.css);
+
 /*Reset */
 * {
   padding: 0px;
@@ -16,6 +18,8 @@
 --color-menu-hover: #79ffe2;
 --color-border: #000000;
 --color-border-hover: #142af5;
+--color-afixos-esta-semana: #6de0fd;
+--color-afixos-proxima-semana: #e7e7e7;
 }
 
 /* Menu Principal */
@@ -98,10 +102,25 @@
   border-radius: 4px;
   border: 1px solid var(--color-border);
   background-color: var(--color-conteudo);
-  
+  justify-content: center;
 }
 
+
+.afixo-mitica-menu {
+  
+  display: flex;
+  justify-content: center;
+}
+
+.afixo-mitica-menu a{
+  font-size: 1.55rem;
+  text-align: center;
+}
+
+/* lista com todos os afixos */
 .afixo-lista li{
+  display: inline-block;
+  text-align: center;
   width: 160px;
   padding: 1rem;
   margin-top:0px;
@@ -110,8 +129,16 @@
   text-align: center;
   border-radius: 4px;
   bordeR: 1px solid var(--color-border);
-  background-color: rgb(7, 7, 7);
-  color: red;
+  background-color: rgb(231, 229, 229);
+}
+
+.afixo-lista li a{
+  text-transform: uppercase;
+  background-color: rgb(223, 221, 221);
+  border-radius: 4px;
+  border: 1px solid rgb(173, 124, 124);
+  color: #000000;
+  
 }
 
 .conteiner-centralizado {
@@ -126,6 +153,9 @@
   font-size: 32px;
   padding: 20px;
   margin: 20px 40px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: var(--color-afixos-esta-semana);
 }
 
 .afixos-proxima-semana {
@@ -134,5 +164,9 @@
   box-sizing: border-box;
   font-size: 32px;
   padding: 20px;
-  margin: 20px 40px
+  margin: 20px 40px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: var(--color-afixos-proxima-semana)
 }
+
