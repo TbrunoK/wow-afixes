@@ -6,20 +6,33 @@
   margin: 0px;
   text-decoration: none;
   list-style-type: none;
+  color: black;
+  text-align: center;
+  
 }
 /*Root / Variaveis */
 :root {
---color-header: #02a8f5;
---color-menu: #5766eb;
---color-conteudo: #00f7ff;
---color-conteudo-hover: #014353;
+--color-header: #e7e7e7;
+--color-menu: rgb(0, 0, 0);
+--color-conteudo: #e7e7e7;
+--color-conteudo-hover: #a8a5a5;
 --color-font: #000000;
---color-font-hover: #ffffff;
---color-menu-hover: #79ffe2;
+--color-font-hover: #000000;
+--color-menu-hover: #bbbbbb;
 --color-border: #000000;
 --color-border-hover: #142af5;
---color-afixos-esta-semana: #6de0fd;
+--color-afixos-esta-semana: #e7e7e7;
 --color-afixos-proxima-semana: #e7e7e7;
+}
+
+.container {
+  
+  max-width: 1400px;
+  margin:auto;
+}
+
+.div-bg {
+  background-color: var(--color-header);
 }
 
 /* Menu Principal */
@@ -31,8 +44,8 @@
   align-items: center;
   font-size: 1.4rem;
   border-radius: 0px;
-  border: 1px solid black;
-  background-color: var(--color-header);
+  
+  
 }
 
 .div-menu-logo {
@@ -91,25 +104,23 @@
 }
 
 /*Menu afixos */
+.afixo-mitica-menu {
+  display: flex;
+  
+}
+
 
 .afixos-texto {
   display: flex;
-  width: 11.2rem;
-  padding: 23px;
+  
+  
   color: var(--color-font);
   border-radius: 4px;
   border: 1px solid var(--color-border);
   background-color: var(--color-conteudo);
-  
- 
 }
 
 
-.afixo-mitica-menu {
-  display: flex;
-  
-  border: 1px solid red
-}
 
 .afixo-mitica-menu a{
   flex-wrap: wrap;
@@ -119,19 +130,37 @@
   height: 100%;
   margin: auto;
   font-size: 3rem;
-  padding: 10px;
+  padding: 40px;
   
 }
 
-
-
 /* lista com todos os afixos */
-.afixo-lista li{
-  display: inline-block;
+.lista-completa {
+  background-color: blue;
+  padding: 1px;
+}
+
+.lista-completa li{
+  
+  
+}
+
+.afixo-lista {
+  display: block;
+  justify-content: center;
   text-align: center;
   
+}
+
+.afixo-lista li{
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+
+  
   padding: 1rem;
-  margin-top:0px;
+  margin-top:20px;
   font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
@@ -154,19 +183,18 @@
   
 }
 
-.afixo-lista {
-  display: flex;
-  justify-content: center;
-}
 
 .conteiner-centralizado {
   display: flex;
   justify-content: center;
+
 }
 
 .afixos-esta-semana {
+  height: 20rem;
+  width: 33rem;
+  justify-content: center;
   text-align: center;
-  content: "";
   box-sizing: border-box;
   font-size: 32px;
   padding: 20px;
@@ -174,14 +202,17 @@
   border: 1px solid black;
   border-radius: 4px;
   background-color: var(--color-afixos-esta-semana);
+
 }
 
 .afixos-proxima-semana {
+  height: 20rem;
+  width: 33rem;
   text-align: center;
-  content: "";
+  justify-content: center;
   box-sizing: border-box;
   font-size: 32px;
-  padding: 20px;
+  padding: 44px;
   margin: 20px 40px;
   border: 1px solid black;
   border-radius: 4px;
