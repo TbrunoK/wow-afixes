@@ -2,6 +2,7 @@
 
 /*Reset */
 * {
+  font-family: 'Roboto', sans-serif;
   padding: 0px;
   margin: 0px;
   text-decoration: none;
@@ -20,9 +21,10 @@
 --color-font-hover: #000000;
 --color-menu-hover: #bbbbbb;
 --color-border: #000000;
---color-border-hover: #142af5;
+--color-border-hover: #696969;
 --color-afixos-esta-semana: #e7e7e7;
 --color-afixos-proxima-semana: #e7e7e7;
+--color-gradient: linear-gradient(#f2e1ff, #09062c);
 }
 
 .container {
@@ -106,7 +108,7 @@
 /*Menu afixos */
 .afixo-mitica-menu {
   display: flex;
-  
+  padding: 40px;
 }
 
 
@@ -136,13 +138,13 @@
 
 /* lista com todos os afixos */
 .lista-completa {
-  background-color: blue;
+  
   padding: 1px;
 }
 
 .lista-completa li{
   
-  
+  background:  var(--color-gradient);
 }
 
 .afixo-lista {
@@ -153,19 +155,17 @@
 }
 
 .afixo-lista li{
-  display: inline-block;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
-
-  
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 400px;
   padding: 1rem;
   margin-top:20px;
   font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
   border-radius: 4px;
-  bordeR: 1px solid var(--color-border);
+  
   background-color: rgb(231, 229, 229);
 }
 
@@ -177,7 +177,7 @@
 .afixo-lista li a{
   font-size: 2rem;
   text-transform: uppercase;
-  background-color: rgb(223, 221, 221);
+  
   border-radius: 4px;
   color: #000000;
   
@@ -191,31 +191,41 @@
 }
 
 .afixos-esta-semana {
-  height: 20rem;
-  width: 33rem;
-  justify-content: center;
-  text-align: center;
-  box-sizing: border-box;
-  font-size: 32px;
-  padding: 20px;
-  margin: 20px 40px;
-  border: 1px solid black;
-  border-radius: 4px;
-  background-color: var(--color-afixos-esta-semana);
-
+    height: 20rem;
+    width: 33rem;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 32px;
+    padding: 20px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: var(--color-afixos-proxima-semana);
+    margin-top: 60px;
+    
 }
 
 .afixos-proxima-semana {
-  height: 20rem;
-  width: 33rem;
-  text-align: center;
-  justify-content: center;
-  box-sizing: border-box;
-  font-size: 32px;
-  padding: 44px;
-  margin: 20px 40px;
-  border: 1px solid black;
-  border-radius: 4px;
-  background-color: var(--color-afixos-proxima-semana)
+    height: 20rem;
+    width: 33rem;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 32px;
+    padding: 20px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: var(--color-afixos-proxima-semana);
 }
 
+.footer {
+  margin-top: 60px;
+  background-color: #f7f7f7;
+}
+.footer p{
+  font-size: 32px;
+  padding: 60px;
+  background-color: rgb(197, 197, 197);
+}
