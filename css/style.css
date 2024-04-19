@@ -94,34 +94,42 @@
 
 .afixos-texto {
   display: flex;
-  width: 9.2rem;
-  margin: 20px 0px 0px 0px;
+  width: 11.2rem;
   padding: 23px;
-  font-size: 1.25rem;
   color: var(--color-font);
   border-radius: 4px;
   border: 1px solid var(--color-border);
   background-color: var(--color-conteudo);
-  justify-content: center;
+  
+ 
 }
 
 
 .afixo-mitica-menu {
-  
   display: flex;
-  justify-content: center;
+  
+  border: 1px solid red
 }
 
 .afixo-mitica-menu a{
-  font-size: 1.55rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
+  height: 100%;
+  margin: auto;
+  font-size: 3rem;
+  padding: 10px;
+  
 }
+
+
 
 /* lista com todos os afixos */
 .afixo-lista li{
   display: inline-block;
   text-align: center;
-  width: 160px;
+  
   padding: 1rem;
   margin-top:0px;
   font-size: 1rem;
@@ -132,13 +140,23 @@
   background-color: rgb(231, 229, 229);
 }
 
+.afixo-lista ul {
+
+  display: inline;
+}
+
 .afixo-lista li a{
+  font-size: 2rem;
   text-transform: uppercase;
   background-color: rgb(223, 221, 221);
   border-radius: 4px;
-  border: 1px solid rgb(173, 124, 124);
   color: #000000;
   
+}
+
+.afixo-lista {
+  display: flex;
+  justify-content: center;
 }
 
 .conteiner-centralizado {
