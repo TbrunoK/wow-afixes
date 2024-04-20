@@ -21,4 +21,4 @@ Contribuição
 Contribuições são bem-vindas! Se você deseja melhorar este projeto, sinta-se à vontade para enviar um pull request.
 
 Autor
-Este projeto foi desenvolvido por [Nome do Autor].
+Este projeto foi desenvolvido por Bruno Chagas.
