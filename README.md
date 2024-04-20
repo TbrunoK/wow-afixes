@@ -7,11 +7,13 @@ O projeto é composto por um único arquivo HTML e um arquivo CSS externo para e
 
 index.html: Contém a estrutura HTML da página web, incluindo o cabeçalho, o conteúdo dos afixos desta semana e da próxima semana, uma lista completa de afixos e o rodapé.
 css/style.css: Arquivo CSS externo que fornece estilos para a página web.
+
 Funcionalidades
 Exibição de Afixos: A página exibe os afixos desta semana e da próxima semana, juntamente com as datas correspondentes.
 Lista de Afixos: Uma lista completa de afixos é fornecida para os usuários, onde eles podem clicar em cada afixo para obter mais informações.
 Links Externos: Os afixos estão vinculados aos respectivos guias no site Wowhead para fornecer informações detalhadas.
 Tecnologias Utilizadas
+
 HTML5: Utilizado para estruturar o conteúdo da página web.
 CSS3: Utilizado para estilização da página web.
 Como Usar
