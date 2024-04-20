@@ -1,29 +1,29 @@
 @import url(./style2.css);
 
 /*Reset */
+
+
 * {
+  
   font-family: 'Roboto', sans-serif;
   padding: 0px;
   margin: 0px;
   text-decoration: none;
   list-style-type: none;
-  color: black;
+  color: var(--cor-primaria4);
   text-align: center;
   
 }
+body {
+   background-color: var(--cor-primaria1);
+}
 /*Root / Variaveis */
 :root {
---color-header: #e7e7e7;
---color-menu: rgb(0, 0, 0);
---color-conteudo: #e7e7e7;
---color-conteudo-hover: #a8a5a5;
---color-font: #000000;
---color-font-hover: #000000;
---color-menu-hover: #bbbbbb;
---color-border: #000000;
---color-border-hover: #696969;
---color-afixos-esta-semana: #e7e7e7;
---color-afixos-proxima-semana: #e7e7e7;
+--cor-primaria1: #f2e1ff;
+--cor-primaria2: #ddc8ff;
+--cor-primaria3: #393199;
+--cor-primaria4: #140f4b;
+
 --color-gradient: linear-gradient(#f2e1ff, #09062c);
 }
 
@@ -34,7 +34,7 @@
 }
 
 .div-bg {
-  background-color: var(--color-header);
+ background-color: var(--cor-primaria2);
 }
 
 /* Menu Principal */
@@ -48,6 +48,7 @@
   border-radius: 0px;
   
   
+  
 }
 
 .div-menu-logo {
@@ -55,41 +56,53 @@
   margin-left: 20px;
   font-size: 32px;
   border-radius: 4px;
-  border: 2px solid var(--color-border);
+  
   
 }
 
-.div-menu:hover{
-  border: 1px solid var(--color-border-hover);
-  background-color:  var(--color-menu-hover);
-  
-}
+
 
 
 .div-menu a {
   color: var(--color-font)
 }
 
-.itens-direita a {
-  padding: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 4px;
-  color: var(--color-font)
+.itens-direita {
+  display: flex;
+  gap: 2rem;
 }
 
-.itens-direita a:hover {
-  background-color: var(--color-menu-hover);
-  border: 1px solid var(--color-border-hover)
+.itens-direita a {
+  display: inline-block;
+  padding: 20px 0px;
+  position: relative;
+  
+  
 }
+
+.itens-direita a::after{
+  display: block;
+  content: '';
+  width: 0;
+  height: 3px;
+  margin-top: 10px;
+  background-color: var(--cor-primaria4);
+  transition: 0.3s;
+  position: absolute;
+}
+
+.itens-direita a:hover::after {
+width: 100%;
+}
+
+
 
 /* Principal */
 
 .titulo {
   padding: 1.25rem;
   display: block;
-  border: 1px solid red;
+ 
   box-sizing: border-box;
 }
 
@@ -105,6 +118,8 @@
   
 }
 
+
+
 /*Menu afixos */
 .afixo-mitica-menu {
   display: flex;
@@ -114,12 +129,8 @@
 
 .afixos-texto {
   display: flex;
-  
-  
   color: var(--color-font);
   border-radius: 4px;
-  border: 1px solid var(--color-border);
-  background-color: var(--color-conteudo);
 }
 
 
@@ -144,7 +155,7 @@
 
 .lista-completa li{
   
-  background:  var(--color-gradient);
+  background:  var(--cor-primaria2)
 }
 
 .afixo-lista {
@@ -166,7 +177,7 @@
   text-align: center;
   border-radius: 4px;
   
-  background-color: rgb(231, 229, 229);
+ 
 }
 
 .afixo-lista ul {
@@ -185,12 +196,15 @@
 
 
 .conteiner-centralizado {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
 
 }
 
 .afixos-esta-semana {
+    display: flex;
+
     height: 20rem;
     width: 33rem;
     text-align: center;
@@ -199,25 +213,19 @@
     font-size: 32px;
     padding: 20px;
     margin: auto;
-    border: 1px solid black;
-    border-radius: 4px;
-    background-color: var(--color-afixos-proxima-semana);
+    align-items: center;
+    border-radius: 5px;
+    
+    background-color: var(--cor-primaria2);
     margin-top: 60px;
     
 }
 
-.afixos-proxima-semana {
-    height: 20rem;
-    width: 33rem;
-    text-align: center;
-    justify-content: center;
-    box-sizing: border-box;
-    font-size: 32px;
-    padding: 20px;
-    margin: auto;
-    border: 1px solid black;
-    border-radius: 4px;
-    background-color: var(--color-afixos-proxima-semana);
+.afixos a{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 1rem;
+  color: var(--cor-primaria3)
 }
 
 .footer {
@@ -227,5 +235,5 @@
 .footer p{
   font-size: 32px;
   padding: 60px;
-  background-color: rgb(197, 197, 197);
+  background-color: var(--cor-primaria2);
 }
