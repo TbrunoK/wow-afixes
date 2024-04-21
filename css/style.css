@@ -153,6 +153,7 @@ width: 100%;
   width: 0px;
   height: 3px;
   margin-top: 10px;
+  transition: 0.3s;
   background-color: var(--cor-primaria4);
   
 }
