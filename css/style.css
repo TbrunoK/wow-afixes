@@ -121,11 +121,8 @@ width: 100%;
 }
 
 .afixos-mitica-texto:hover::after{
-
   width: 100%;
 }
-
-
 
 
 .afixo-mitica-menu a{
@@ -142,8 +139,8 @@ width: 100%;
 
 /* lista com todos os afixos */
 .lista-completa {
-  
   padding: 1px;
+  
 }
 
 .lista-completa li{
