@@ -102,6 +102,18 @@ width: 100%;
   
 }
 
+.afixo-mitica-menu a{
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  margin: auto;
+  font-size: 3rem;
+  padding: 40px;
+  
+}
+
 .afixos-mitica-texto {
   display: flex;
   border-radius: 4px;
@@ -125,34 +137,38 @@ width: 100%;
 }
 
 
-.afixo-mitica-menu a{
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  height: 100%;
-  margin: auto;
-  font-size: 3rem;
-  padding: 40px;
-  
-}
-
 /* lista com todos os afixos */
 .lista-completa {
   padding: 1px;
-  
+  border-top: 20px solid var(--cor-primaria4);
 }
 
 .lista-completa li{
+    background:  var(--cor-primaria2)
+}
+
+.lista-completa a::after{
+  display: flex;
+  content: "";
+  width: 0px;
+  height: 3px;
+  margin-top: 10px;
+  background-color: var(--cor-primaria4);
   
-  background:  var(--cor-primaria2)
+}
+
+.lista-completa a:hover::after {
+  width: 100%;
 }
 
 .afixo-lista {
   display: block;
   justify-content: center;
   text-align: center;
-  
+}
+
+.afixo-lista ul {
+  display: inline;
 }
 
 .afixo-lista li{
@@ -166,19 +182,11 @@ width: 100%;
   text-transform: uppercase;
   text-align: center;
   border-radius: 4px;
-  
- 
-}
-
-.afixo-lista ul {
-
-  display: inline;
 }
 
 .afixo-lista li a{
   font-size: 2rem;
   text-transform: uppercase;
-  
   border-radius: 4px;
   color: #000000;
   
