@@ -3,25 +3,32 @@ function normalizarTexto(texto) {
     .normalize("NFD") // Normaliza os caracteres acentuados em caracteres comuns e acentos separados
     .replace(/[\u0300-\u036f]/g, "") // Remove os acentos separados
     .replace(/[^\w\s]/gi, "") // Remove outros caracteres especiais
-    .toLowerCase() // Converte para minúsculas
+    .toLowerCase()
 }
 // Função para buscar o afixo quando o usuário clica no botão de busca
 function buscarAfixo() {
   var termoBusca = normalizarTexto(document.getElementById("searchInput").value)
   var afixos = document.querySelectorAll(".lista-completa li")
+  console.log(afixos)
 
   for (var i = 0; i < afixos.length; i++) {
+    let encontrados = 0
     var afixo = afixos[i]
     var nomeAfixo = normalizarTexto(afixo.textContent)
-
+    console.log(nomeAfixo)
+    afixo.classList.remove("destacado")
     if (nomeAfixo.includes(termoBusca)) {
       afixo.classList.add("destacado")
       afixo.scrollIntoView({ behavior: "smooth", block: "center" })
-      return
+      encontrados++
     }
   }
 
-  alert("Afixo não encontrado.")
+  if ((encontrados = 0)) {
+    alert("Afixo não encontrado.")
+  }
+
+  return
 }
 
 // Adiciona um event listener para o evento 'keypress' no campo de busca
