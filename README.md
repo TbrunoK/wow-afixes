@@ -12,8 +12,8 @@ Funcionalidades
 Exibição de Afixos: A página exibe os afixos desta semana e da próxima semana, juntamente com as datas correspondentes.
 Lista de Afixos: Uma lista completa de afixos é fornecida para os usuários, onde eles podem clicar em cada afixo para obter mais informações.
 Links Externos: Os afixos estão vinculados aos respectivos guias no site Wowhead para fornecer informações detalhadas.
-Tecnologias Utilizadas
 
+Tecnologias Utilizadas
 HTML5: Utilizado para estruturar o conteúdo da página web.
 CSS3: Utilizado para estilização da página web.
 Como Usar
