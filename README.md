@@ -24,3 +24,8 @@ Contribuições são bem-vindas! Se você deseja melhorar este projeto, sinta-se
 
 Autor
 Este projeto foi desenvolvido por Bruno Chagas.
+
+<div>
+<a href="https://tbrunok.github.io/wow-afixes/">
+<img src="https://github.com/TbrunoK/wow-afixes/blob/main/assets/projeto-finalizado.png?raw=true">
+</div>
