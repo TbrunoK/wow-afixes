@@ -232,15 +232,17 @@ body {
   margin-top: 20px;
 }
 
+/* Menu de busca */
 .search-input {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  background-color: var(--cor-primaria1);
-  width: 300px;
+  background-color: #ffffffff;
+  width: 150px;
   margin-right: 10px;
 }
 
+/* Botão de busca */
 .search-button {
   padding: 10px 20px;
   border-radius: 4px;
