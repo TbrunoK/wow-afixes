@@ -18,7 +18,9 @@
         <div class="div-menu-logo">
           <ul class="lista-flex">
             <li class="item-esquerda">
-              <a href="#afixo-listas">WOW-AFIXOS</a>
+              <a href="https://github.com/TbrunoK/wow-afixes" target="_blank"
+                >WOW-AFIXOS</a
+              >
             </li>
           </ul>
         </div>
@@ -29,6 +31,15 @@
       </div>
     </header>
     <div class="container">
+      <!-- Botão Afixo -->
+      <input
+        type="text"
+        id="searchInput"
+        class="search-input"
+        placeholder="Digite o Nome do Afixo"
+      />
+      <button onclick="buscarAfixo()" class="search-button">Buscar</button>
+
       <div class="Conteudo-afixos-afixos-semanas">
         <div class="conteiner-centralizado">
           <div class="afixos-esta-semana">
@@ -90,7 +101,7 @@
         </div>
 
         <div class="afixo-lista">
-          <ul class="lista-completa" id="afixo-listas">
+          <ul class="lista-completa">
             <li>
               <img src="./assets/afixes/aflita.jpg" alt="" /><a
                 href="https://www.wowhead.com/pt/affix=135/aflita"
@@ -288,7 +299,7 @@
                 >Transbordante</a
               >
             </li>
-            <li>
+            <li id="trovejante">
               <img src="./assets/afixes/trovejante.jpg" alt="" /><a
                 href="https://www.wowhead.com/pt/affix=132/trovejante"
                 target="_blank"
@@ -307,5 +318,6 @@
       </div>
     </div>
     <footer class="footer"><p>Todos os Direitos Reservados</p></footer>
+    <script src="javascript.js"></script>
   </body>
 </html>

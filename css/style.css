@@ -1,6 +1,6 @@
 /*Reset */
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 0px;
   margin: 0px;
   text-decoration: none;
@@ -10,25 +10,25 @@
 }
 
 body {
-   background-color: var(--cor-primaria1);
+  background-color: var(--cor-primaria1);
 }
 
 /*Root / Variaveis */
 :root {
---cor-primaria1: #f2e1ff;
---cor-primaria2: #ddc8ff;
---cor-primaria3: #393199;
---cor-primaria4: #140f4b;
---color-gradient: linear-gradient(#f2e1ff, #09062c);
+  --cor-primaria1: #f2e1ff;
+  --cor-primaria2: #ddc8ff;
+  --cor-primaria3: #393199;
+  --cor-primaria4: #140f4b;
+  --color-gradient: linear-gradient(#f2e1ff, #09062c);
 }
 
 .container {
   max-width: 1400px;
-  margin:auto;
+  margin: auto;
 }
 
 .div-bg {
- background-color: var(--cor-primaria2);
+  background-color: var(--cor-primaria2);
 }
 
 /* Menu Principal */
@@ -47,9 +47,8 @@ body {
   margin-left: 20px;
   font-size: 32px;
   border-radius: 4px;
-  
 }
-.div-menu-logo a::after{
+.div-menu-logo a::after {
   display: block;
   content: "";
   width: 0px;
@@ -64,7 +63,7 @@ body {
   width: 100%;
 }
 .div-menu a {
-  color: var(--color-font)
+  color: var(--color-font);
 }
 
 .itens-direita {
@@ -78,9 +77,9 @@ body {
   position: relative;
 }
 
-.itens-direita a::after{
+.itens-direita a::after {
   display: block;
-  content: '';
+  content: "";
   width: 0px;
   height: 3px;
   margin-top: 10px;
@@ -90,19 +89,17 @@ body {
 }
 
 .itens-direita a:hover::after {
-width: 100%;
+  width: 100%;
 }
-
 
 /*Menu afixos */
 .afixo-mitica-menu {
   display: flex;
   padding: 40px;
   text-transform: uppercase;
-  
 }
 
-.afixo-mitica-menu a{
+.afixo-mitica-menu a {
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
@@ -111,13 +108,11 @@ width: 100%;
   margin: auto;
   font-size: 3rem;
   padding: 40px;
-  
 }
 
 .afixos-mitica-texto {
   display: flex;
   border-radius: 4px;
-  
 }
 
 .afixos-mitica-texto::after {
@@ -129,13 +124,11 @@ width: 100%;
   background-color: var(--cor-primaria4);
   transition: 0.3s;
   position: relative;
-  
 }
 
-.afixos-mitica-texto:hover::after{
+.afixos-mitica-texto:hover::after {
   width: 100%;
 }
-
 
 /* lista com todos os afixos */
 .lista-completa {
@@ -143,11 +136,11 @@ width: 100%;
   border-top: 20px solid var(--cor-primaria4);
 }
 
-.lista-completa li{
-    background:  var(--cor-primaria2)
+.lista-completa li {
+  background: var(--cor-primaria2);
 }
 
-.lista-completa a::after{
+.lista-completa a::after {
   display: flex;
   content: "";
   width: 0px;
@@ -155,7 +148,6 @@ width: 100%;
   margin-top: 10px;
   transition: 0.3s;
   background-color: var(--cor-primaria4);
-  
 }
 
 .lista-completa a:hover::after {
@@ -172,67 +164,93 @@ width: 100%;
   display: inline;
 }
 
-.afixo-lista li{
+.afixo-lista li {
   display: inline-flex;
   align-items: center;
   gap: 20px;
   max-width: 400px;
   padding: 1rem;
-  margin-top:20px;
+  margin-top: 20px;
   font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
   border-radius: 4px;
 }
 
-.afixo-lista li a{
+.afixo-lista li a {
   font-size: 2rem;
   text-transform: uppercase;
   border-radius: 4px;
   color: #000000;
-  
 }
-
 
 .conteiner-centralizado {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-
 }
 
 .afixos-esta-semana {
-    display: flex;
+  display: flex;
 
-    height: 20rem;
-    width: 33rem;
-    text-align: center;
-    justify-content: center;
-    box-sizing: border-box;
-    font-size: 32px;
-    padding: 20px;
-    margin: auto;
-    align-items: center;
-    border-radius: 5px;
-    
-    background-color: var(--cor-primaria2);
-    margin-top: 60px;
-    
+  height: 20rem;
+  width: 33rem;
+  text-align: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-size: 32px;
+  padding: 20px;
+  margin: auto;
+  align-items: center;
+  border-radius: 5px;
+
+  background-color: var(--cor-primaria2);
+  margin-top: 60px;
 }
 
-.afixos a{
+.afixos a {
   display: grid;
   grid-template-columns: 1fr;
   margin-top: 1rem;
-  color: var(--cor-primaria3)
+  color: var(--cor-primaria3);
 }
 
 .footer {
   margin-top: 60px;
   background-color: #f7f7f7;
 }
-.footer p{
+.footer p {
   font-size: 32px;
   padding: 60px;
   background-color: var(--cor-primaria2);
+}
+
+/* Estilos para o campo de busca e botão */
+.search-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 300px;
+  margin-right: 10px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilo para destacar o afixo encontrado */
+.destacado {
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  padding: 5px;
 }
