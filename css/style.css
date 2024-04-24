@@ -17,6 +17,7 @@ body {
 :root {
   --cor-primaria1: #f2e1ff;
   --cor-primaria2: #ddc8ff;
+  --cor-primaria2-1: #ad95d3ef;
   --cor-primaria3: #393199;
   --cor-primaria4: #140f4b;
   --color-gradient: linear-gradient(#f2e1ff, #09062c);
@@ -241,9 +242,9 @@ body {
 
 .search-button {
   padding: 10px 20px;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: #fff;
+  border-radius: 4px;
+  background-color: var(--cor-primaria2);
+  color: #000000;
   border: none;
   cursor: pointer;
 }
