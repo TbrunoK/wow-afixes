@@ -238,8 +238,9 @@ body {
   border-radius: 5px;
   border: 1px solid #ccc;
   background-color: #ffffffff;
-  width: 150px;
+  width: 220px;
   margin-right: 10px;
+  text-transform: uppercase;
 }
 
 /* Botão de busca */
