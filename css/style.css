@@ -238,16 +238,18 @@ body {
   border-radius: 5px;
   border: 1px solid #ccc;
   background-color: #ffffffff;
-  width: 220px;
+  width: 180px;
   margin-top: 60px;
-  margin-right: 10px;
+  margin-right: 5px;
+  margin-left: 1px;
   text-transform: uppercase;
 }
 
 /* Botão de busca */
 .search-button {
-  padding: 10px 20px;
+  padding: 10px 30px;
   border-radius: 4px;
+  margin-left: 10px;
   background-color: var(--cor-primaria2);
   color: #000000;
   border: none;
