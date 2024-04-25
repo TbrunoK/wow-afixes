@@ -239,6 +239,7 @@ body {
   border: 1px solid #ccc;
   background-color: #ffffffff;
   width: 220px;
+  margin-top: 60px;
   margin-right: 10px;
   text-transform: uppercase;
 }
