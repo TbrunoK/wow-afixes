@@ -6,3 +6,8 @@
   --cor-primaria4: #ffffff;
   --color-gradient: linear-gradient(#09062c, #140f4b);
 }
+
+/* Estilos para o campo de busca no modo escuro */
+.dark-mode .search-input {
+  color: #000000; /* Define a cor do texto como branco */
+}
