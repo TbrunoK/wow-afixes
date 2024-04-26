@@ -41,3 +41,18 @@ document
       buscarAfixo()
     }
   })
+
+// Seleciona o link "Dark Mode" pelo ID
+const darkModeToggle = document.getElementById("darkModeToggle")
+
+// Adiciona um ouvinte de evento de clique ao link
+darkModeToggle.addEventListener("click", function () {
+  // Alterna entre os modos claro e escuro
+  if (document.body.classList.contains("dark-mode")) {
+    // Se estiver no modo escuro, remove a classe dark-mode do site
+    document.body.classList.remove("dark-mode")
+  } else {
+    // Se estiver no modo claro, adiciona a classe dark-mode ao site
+    document.body.classList.add("dark-mode")
+  }
+})
