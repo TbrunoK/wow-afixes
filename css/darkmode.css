@@ -9,5 +9,6 @@
 
 /* Estilos para o campo de busca no modo escuro */
 .dark-mode .search-input {
-  color: #000000; /* Define a cor do texto como branco */
+  color: #000000;
+  font-family: "Roboto", sans-serif;
 }
