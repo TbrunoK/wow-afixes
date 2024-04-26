@@ -128,6 +128,13 @@ body {
   width: 100%;
 }
 
+/* Sombreado nos afixos desta semana */
+.sombreado {
+  -webkit-text-stroke: 1px #6d1b92; /* para navegadores baseados em WebKit (Safari, Chrome, etc.) */
+  text-stroke: 1px #6d1b92; /* padrão */
+  color: rgb(0, 153, 255); /* cor do texto */
+}
+
 /*Menu afixos */
 .afixo-mitica-menu {
   display: flex;
@@ -225,7 +232,7 @@ body {
   grid-template-columns: 1fr 1fr;
   justify-content: center;
 }
-
+/* Afixos desta semana */
 .afixos-esta-semana {
   display: flex;
 
@@ -249,6 +256,21 @@ body {
   grid-template-columns: 1fr;
   margin-top: 1rem;
   color: var(--cor-primaria3);
+}
+
+.afixos a::after {
+  display: inline-block;
+  content: "";
+  width: 0px;
+  height: 3px;
+
+  background-color: var(--cor-primaria4);
+  transition: 0.3s;
+  position: relative;
+}
+
+.afixos a:hover::after {
+  width: 100%;
 }
 
 .footer {

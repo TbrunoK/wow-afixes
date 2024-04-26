@@ -24,10 +24,9 @@ function buscarAfixo() {
     }
   }
 
-  if ((encontrados = 0)) {
+  if (encontrados === 0) {
     alert("Afixo não encontrado.")
   }
-
   return
 }
 
