@@ -93,6 +93,40 @@ body {
 .itens-direita a:hover::after {
   width: 100%;
 }
+/* Menu de idiomas */
+.idioma-menu {
+  display: inline-block;
+  margin: auto;
+  padding: 20px;
+  font-family: "roboto" sans-serif;
+  font-size: 1.4rem;
+}
+
+/* Estilos para o seletor de idiomas */
+#idioma {
+  padding: 8px;
+  font-size: 16px;
+  margin-top: -30px;
+  border-radius: 4px;
+  background-color: var(--cor-primaria1);
+}
+
+/* Detalhe do menu idioma */
+.idioma-menu::after {
+  display: block;
+  content: "";
+  width: 0px;
+  height: 3px;
+  max-width: 310px;
+  margin-top: 5px;
+  background-color: var(--cor-primaria4);
+  transition: 0.3s;
+  position: absolute;
+}
+
+.idioma-menu:hover::after {
+  width: 100%;
+}
 
 /*Menu afixos */
 .afixo-mitica-menu {
