@@ -128,13 +128,6 @@ body {
   width: 100%;
 }
 
-/* Sombreado nos afixos desta semana */
-.sombreado {
-  -webkit-text-stroke: 1px #6d1b92; /* para navegadores baseados em WebKit (Safari, Chrome, etc.) */
-  text-stroke: 1px #6d1b92; /* padrão */
-  color: rgb(0, 153, 255); /* cor do texto */
-}
-
 /*Menu afixos */
 .afixo-mitica-menu {
   display: flex;
@@ -263,7 +256,6 @@ body {
   content: "";
   width: 0px;
   height: 3px;
-
   background-color: var(--cor-primaria4);
   transition: 0.3s;
   position: relative;
@@ -315,7 +307,7 @@ body {
 
 /* Estilo para destacar o afixo encontrado */
 .destacado {
-  border: 2px solid #007bff;
+  border: 2px solid #13c4c4;
   border-radius: 5px;
   padding: 5px;
 }
