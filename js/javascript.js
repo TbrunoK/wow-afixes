@@ -62,7 +62,6 @@ function adicionarNome(link) {
   var nome = link.textContent
 
   // Seleciona a barra de pesquisa
-  // Corrigir a seleção da barra de pesquisa
   var searchInput = document.getElementById("searchInput")
 
   // Adiciona o nome clicado à barra de pesquisa
