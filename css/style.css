@@ -229,8 +229,8 @@ body {
 .afixos-esta-semana {
   display: flex;
 
-  height: 20rem;
-  width: 33rem;
+  height: auto;
+  width: auto;
   text-align: center;
   justify-content: center;
   box-sizing: border-box;
