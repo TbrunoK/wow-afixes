@@ -120,7 +120,7 @@ body {
   max-width: 310px;
   margin-top: 5px;
   background-color: var(--cor-primaria4);
-  transition: 0.3s;
+  transition:1.8s;
   position: absolute;
 }
 
