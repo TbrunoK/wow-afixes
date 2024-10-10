@@ -5,7 +5,7 @@ function normalizarTexto(texto) {
     .replace(/[^\w\s]/gi, "") // Remove outros caracteres especiais
     .toLowerCase()
 }
-// Função para buscar o afixo quando o usuário clica no botão de busca
+// Função para buscar o afixo quando o usuário clica no botão de busca.
 function buscarAfixo() {
   var termoBusca = normalizarTexto(document.getElementById("searchInput").value)
   var afixos = document.querySelectorAll(".lista-completa li")
