@@ -1,4 +1,4 @@
-@import url(./darkmode.css);
+@import url(darkmode.css);
 /*Reset */
 * {
   font-family: "Roboto", sans-serif;
@@ -120,7 +120,7 @@ body {
   max-width: 310px;
   margin-top: 5px;
   background-color: var(--cor-primaria4);
-  transition:1.8s;
+  transition: 1.8s;
   position: absolute;
 }
 
