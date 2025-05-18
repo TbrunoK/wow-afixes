@@ -1,8 +1,8 @@
 /* Adicionar dark mode  */
 .dark-mode {
   --cor-primaria1: #000000;
-  --cor-primaria2: #084baf;
-  --cor-primaria3: #000000;
+  --cor-primaria2: #0d0d0e;
+  --cor-primaria3: #ffffff;
   --cor-primaria4: #ffffff;
   --color-gradient: linear-gradient(#09062c, #140f4b);
 }

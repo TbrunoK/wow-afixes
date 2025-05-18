@@ -16,12 +16,12 @@ body {
 
 /*Root / Variaveis */
 :root {
-  --cor-primaria1: #f2e1ff;
-  --cor-primaria2: #ddc8ff;
-  --cor-primaria2-1: #ad95d3ef;
+  --cor-primaria1: #fcfbfb;
+  --cor-primaria2: #ffffff;
+  --cor-primaria2-1: #000000ef;
   --cor-primaria3: #393199;
-  --cor-primaria4: #140f4b;
-  --color-gradient: linear-gradient(#f2e1ff, #09062c);
+  --cor-primaria4: #000000;
+  --color-gradient: linear-gradient(#ffffff, #ffffff);
 }
 
 .container {
@@ -30,7 +30,7 @@ body {
 }
 
 .div-bg {
-  background-color: var(--cor-primaria2);
+  background-color: var(--cor-primaria1);
 }
 
 /* Menu Principal */
@@ -173,7 +173,7 @@ body {
 }
 
 .lista-completa li {
-  background: var(--cor-primaria2);
+  background: var(--cor-primaria1);
 }
 
 .lista-completa a::after {
@@ -217,7 +217,7 @@ body {
   font-size: 2rem;
   text-transform: uppercase;
   border-radius: 4px;
-  color: #000000;
+  color: red;
 }
 
 .conteiner-centralizado {
